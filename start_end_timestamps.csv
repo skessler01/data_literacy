@@ -1,0 +1,315 @@
+standort,channel_name,counter_site_id,earliest_timestamp,latest_timestamp
+Stadt Karlsruhe,Erbprinz. West,100004165,2013-01-01 01:00:00,2024-11-29 04:00:00
+Stadt Karlsruhe,Erbprinz Ost,100004165,2013-01-01 01:00:00,2024-11-29 04:00:00
+Stadt Freiburg,Wiwilibrücke Querschnitt,100004595,2013-01-01 01:00:00,2024-12-01 03:00:00
+Stadt Freiburg,FR2 Güterbahn / Ferd.-Weiß-Str.,100014511,2014-07-31 00:00:00,2024-11-30 05:00:00
+Stadt Freiburg,FR1 Dreisam / Otto-Wels-Str. Fahrräder 1 Nordfahrbahn stadteinwärts,100014585,2014-08-01 01:00:00,2020-07-31 23:00:00
+Stadt Freiburg,FR1 Dreisam / Otto-Wels-Str. Fahrräder,100014585,2020-08-01 01:00:00,2024-08-23 04:00:00
+Stadt Freiburg,Richtung Süden (Zelt 01_IN),100017109,2014-12-18 00:00:00,2024-11-30 04:00:00
+Stadt Freiburg,Richtung Norden (Zelt 01_OUT),100017109,2014-12-18 00:00:00,2024-11-30 04:00:00
+Landeshauptstadt Stuttgart,König-Karls-Brücke A IN,100034882,2013-01-01 01:00:00,2024-11-30 04:00:00
+Landeshauptstadt Stuttgart,König-Karls-Brücke A OUT,100034882,2013-01-01 01:00:00,2024-11-30 04:00:00
+Landeshauptstadt Stuttgart,König-Karls-Brücke B IN,100034882,2013-01-01 01:00:00,2024-11-30 04:00:00
+Landeshauptstadt Stuttgart,König-Karls-Brücke B OUT,100034882,2013-01-01 01:00:00,2024-11-30 04:00:00
+Landeshauptstadt Stuttgart,Böblinger Straße NEW Vélos IN,100034894,2014-01-01 01:00:00,2024-12-01 03:00:00
+Landeshauptstadt Stuttgart,Böblinger Straße NEW Vélos OUT,100034894,2014-01-01 01:00:00,2024-12-01 03:00:00
+Landeshauptstadt Stuttgart,Taubenheimstraße Ri. Süd,100042486,2016-12-14 00:00:00,2024-11-30 05:00:00
+Landeshauptstadt Stuttgart,Taubenheimstraße Ri. Nord,100042486,2016-12-14 00:00:00,2024-07-08 04:00:00
+Landeshauptstadt Stuttgart,Waiblinger Straße stadtauswärts,100042487,2016-12-14 00:00:00,2024-07-08 04:00:00
+Landeshauptstadt Stuttgart,Waiblinger Straße stadteinwärts,100042487,2016-12-14 00:00:00,2024-11-30 04:00:00
+Landeshauptstadt Stuttgart,Samaraweg Fahrräder Stadtauswärts,100060100,2020-06-23 00:00:00,2024-12-01 03:00:00
+Landeshauptstadt Stuttgart,Samaraweg Fahrräder Stadteinwärts,100060100,2020-06-23 00:00:00,2024-12-01 03:00:00
+Landeshauptstadt Stuttgart,Channel 1 IN,100061257,2020-07-27 00:00:00,2024-12-01 03:00:00
+Landeshauptstadt Stuttgart,Channel 2 OUT,100061257,2020-07-27 00:00:00,2024-12-01 03:00:00
+Landeshauptstadt Stuttgart,Channel 3 IN,100061257,2020-07-27 00:00:00,2024-12-01 03:00:00
+Landeshauptstadt Stuttgart,Channel 4 OUT,100061257,2020-07-27 00:00:00,2024-12-01 03:00:00
+Landeshauptstadt Stuttgart,Inselstraße Cyclists IN,100063204,2020-07-13 00:00:00,2024-12-01 03:00:00
+Landeshauptstadt Stuttgart,Inselstraße Cyclists OUT,100063204,2020-07-13 00:00:00,2024-12-01 03:00:00
+Landeshauptstadt Stuttgart,Lautenschlager Straße Cyclists IN,100063206,2020-07-27 00:00:00,2024-12-01 03:00:00
+Landeshauptstadt Stuttgart,Lautenschlager Straße Cyclists OUT,100063206,2020-07-27 00:00:00,2024-12-01 03:00:00
+Landeshauptstadt Stuttgart,Tübinger Straße Fahrräder IN,100063225,2020-07-28 00:00:00,2024-12-01 03:00:00
+Landeshauptstadt Stuttgart,Tübinger Straße Fahrräder OUT,100063225,2020-07-28 00:00:00,2024-12-01 03:00:00
+Landeshauptstadt Stuttgart,Channel 1 IN,100061633,2020-09-01 01:00:00,2024-12-01 03:00:00
+Landeshauptstadt Stuttgart,Channel 2 OUT,100061633,2020-09-01 01:00:00,2024-12-01 03:00:00
+Landeshauptstadt Stuttgart,Channel 3 IN,100061633,2020-09-01 01:00:00,2024-12-01 03:00:00
+Landeshauptstadt Stuttgart,Channel 4 OUT,100061633,2020-09-01 01:00:00,2024-12-01 03:00:00
+Landeshauptstadt Stuttgart,Channel 1 IN,100061648,2020-09-01 01:00:00,2024-12-01 03:00:00
+Landeshauptstadt Stuttgart,Channel 2 OUT,100061648,2020-09-01 01:00:00,2024-12-01 03:00:00
+Landeshauptstadt Stuttgart,Channel 3 IN,100061648,2020-09-01 01:00:00,2024-12-01 03:00:00
+Landeshauptstadt Stuttgart,Channel 4 OUT,100061648,2020-09-01 01:00:00,2024-12-01 03:00:00
+Landeshauptstadt Stuttgart,Channel 1 IN,100062943,2020-09-01 01:00:00,2024-12-01 03:00:00
+Landeshauptstadt Stuttgart,Channel 2 OUT,100062943,2020-09-01 01:00:00,2024-12-01 03:00:00
+Landeshauptstadt Stuttgart,Channel 3 IN,100062943,2020-09-01 01:00:00,2024-12-01 03:00:00
+Landeshauptstadt Stuttgart,Channel 4 OUT,100062943,2020-09-01 01:00:00,2024-12-01 03:00:00
+Landeshauptstadt Stuttgart,Solitudestraße Fahrräder IN,100062945,2020-09-01 01:00:00,2024-12-01 03:00:00
+Landeshauptstadt Stuttgart,Solitudestraße Fahrräder OUT,100062945,2020-09-01 01:00:00,2024-12-01 03:00:00
+Landeshauptstadt Stuttgart,Am Kräherwald Cyclists IN,100063203,2020-09-01 01:00:00,2024-12-01 03:00:00
+Landeshauptstadt Stuttgart,Am Kräherwald Cyclists OUT,100063203,2020-09-01 01:00:00,2024-12-01 03:00:00
+Landeshauptstadt Stuttgart,Neckartalstraße Cyclists IN,100063205,2020-09-01 01:00:00,2024-12-01 03:00:00
+Landeshauptstadt Stuttgart,Neckartalstraße Cyclists OUT,100063205,2020-09-01 01:00:00,2024-12-01 03:00:00
+Stadt Tübingen,Richtung Altstadt,100003359,2013-05-15 01:00:00,2024-11-30 04:00:00
+Stadt Tübingen,Richtung Derendingen,100003359,2013-05-15 01:00:00,2024-11-30 04:00:00
+Stadt Tübingen,Unterführung Steinlach/Karlstraße Südseite - Steinlachallee Fahrräder IN,100003359,2020-11-19 05:00:00,2024-11-30 04:00:00
+Stadt Tübingen,Unterführung Steinlach/Karlstraße Südseite - Steinlachallee Fahrräder OUT,100003359,2020-11-19 05:00:00,2024-11-30 04:00:00
+Stadt Tübingen,Richtung Altstadt,100003358,2013-06-21 01:00:00,2024-12-01 03:00:00
+Stadt Tübingen,Richtung Bahnhof,100003358,2013-06-21 01:00:00,2024-12-01 03:00:00
+Stadt Tübingen,Fuß- & Radtunnel Südportal - Derendinger Allee Fahrräder IN,100003358,2020-11-19 05:00:00,2024-12-01 03:00:00
+Stadt Tübingen,Fuß- & Radtunnel Südportal - Derendinger Allee Fahrräder OUT,100003358,2020-11-19 05:00:00,2024-12-01 03:00:00
+Stadt Tübingen,Richtung Neckar/Tübingen,100026408,2016-02-19 00:00:00,2024-09-19 13:00:00
+Stadt Tübingen,Neckartalradweg Hirschau - parallel L371 Fahrräder Richtung Hirschau,100026408,2016-02-19 00:00:00,2024-09-19 13:00:00
+Stadt Tübingen,Neckartalradweg Hirschau - parallel L371 Fahrräder Richtung Tübingen,100026408,2020-11-19 05:00:00,2024-09-19 13:00:00
+Stadt Lörrach,Berliner Platz Fahrräder,100008949,2013-07-18 00:00:00,2024-11-30 23:00:00
+Stadt Lörrach,A Stadt Einwärts,100038858,2018-11-01 01:00:00,2024-11-30 04:00:00
+Stadt Lörrach,A Stadt auswärts,100038858,2018-11-01 01:00:00,2024-11-30 04:00:00
+Stadt Lörrach,B Stadt Einwärts,100038858,2018-11-01 01:00:00,2024-11-30 04:00:00
+Stadt Lörrach,B Stadt auswärts,100038858,2018-11-01 01:00:00,2024-11-30 04:00:00
+Stadt Heilbronn,<15 IN,100011532,2013-11-19 00:00:00,2024-11-30 04:00:00
+Stadt Heilbronn,< 15 OUT,100011532,2013-11-19 00:00:00,2024-11-30 04:00:00
+Stadt Heilbronn,15 < X <= 25 IN,100011532,2013-11-19 00:00:00,2024-11-30 04:00:00
+Stadt Heilbronn,15 < X <= 25 OUT,100011532,2013-11-19 00:00:00,2024-11-30 04:00:00
+Stadt Heilbronn,25 < X <= 35 IN,100011532,2013-11-19 00:00:00,2024-11-30 04:00:00
+Stadt Heilbronn,25 < X <= 35 OUT,100011532,2013-11-19 00:00:00,2024-11-30 04:00:00
+Stadt Heilbronn,> 35 IN,100011532,2013-11-19 00:00:00,2024-11-30 04:00:00
+Stadt Heilbronn,> 35 OUT,100011532,2013-11-19 00:00:00,2024-11-30 04:00:00
+Stadt Heilbronn,Neckarufer [Bike IN],100011532,2020-11-19 05:00:00,2024-11-30 04:00:00
+Stadt Heilbronn,Neckarufer [Bike OUT],100011532,2020-11-19 05:00:00,2024-11-30 04:00:00
+Stadt Heilbronn,Route Nord Fahrräder Fahrtrichtung Innenstadt,100027946,2016-03-11 00:00:00,2024-11-30 04:00:00
+Stadt Heilbronn,Route Nord Fahrräder Fahrtrichtung Campuspark,100027946,2016-03-11 00:00:00,2024-11-30 04:00:00
+Stadt Heilbronn,Route Süd Fahrräder Fahrtrichtung Innenstadt,100027947,2016-03-11 00:00:00,2024-11-30 23:00:00
+Stadt Heilbronn,Route Süd Fahrräder Fahrtrichtung Flein,100027947,2016-03-11 00:00:00,2024-11-30 23:00:00
+Stadt Heilbronn,Channel 1 IN,100064303,2020-10-21 00:00:00,2024-12-01 01:00:00
+Stadt Heilbronn,Channel 2 OUT,100064303,2020-10-21 00:00:00,2024-12-01 01:00:00
+Stadt Heilbronn,Channel 3 IN,100064303,2020-10-21 00:00:00,2024-12-01 01:00:00
+Stadt Heilbronn,Channel 4 OUT,100064303,2020-10-21 00:00:00,2024-12-01 01:00:00
+Stadt Heilbronn,Channel 5 IN,100064303,2020-10-21 00:00:00,2024-12-01 01:00:00
+Stadt Heilbronn,Channel 6 OUT,100064303,2020-10-21 00:00:00,2024-12-01 01:00:00
+Stadt Mannheim,Renzstr. IN,100013246,2014-03-26 00:00:00,2024-12-01 01:00:00
+Stadt Mannheim,Renzstr. OUT,100013246,2014-03-26 00:00:00,2024-12-01 01:00:00
+Stadt Mannheim,Kurpfalzbrücke IN,100043761,2016-10-04 00:00:00,2024-11-30 23:00:00
+Stadt Mannheim,Kurpfalzbrücke OUT,100043761,2016-10-04 00:00:00,2024-11-30 23:00:00
+Stadt Mannheim,Jungbuschbrücke Fahrräder IN,100026599,2016-11-21 00:00:00,2020-07-31 23:00:00
+Stadt Mannheim,Jungbuschbrücke Fahrräder OUT,100026599,2016-11-21 00:00:00,2020-07-31 23:00:00
+Stadt Mannheim,Channel 1 IN,100026599,2020-08-01 01:00:00,2024-10-06 04:00:00
+Stadt Mannheim,Channel 2 OUT,100026599,2020-08-01 01:00:00,2024-10-06 04:00:00
+Stadt Mannheim,Channel 3 IN,100026599,2020-08-01 01:00:00,2024-10-06 04:00:00
+Stadt Mannheim,Channel 4 OUT,100026599,2020-08-01 01:00:00,2024-10-06 04:00:00
+Stadt Mannheim,Konrad-Adenauer-Brücke IN,100043759,2018-02-21 00:00:00,2024-12-01 02:00:00
+Stadt Mannheim,Konrad-Adenauer-Brücke OUT,100043759,2018-02-21 00:00:00,2024-12-01 02:00:00
+Stadt Mannheim,Channel 1 IN,100042618,2018-10-22 00:00:00,2024-11-30 04:00:00
+Stadt Mannheim,Channel 2 OUT,100042618,2018-10-22 00:00:00,2024-11-30 04:00:00
+Stadt Mannheim,Channel 3 IN,100042618,2018-10-22 00:00:00,2024-11-30 04:00:00
+Stadt Mannheim,Channel 4 OUT,100042618,2018-10-22 00:00:00,2024-11-30 04:00:00
+Stadt Mannheim,Channel 5 IN,100042618,2018-10-22 00:00:00,2024-11-30 04:00:00
+Stadt Mannheim,Channel 6 OUT,100042618,2018-10-22 00:00:00,2024-11-30 04:00:00
+Stadt Mannheim,Channel 1 IN,100042619,2020-08-01 01:00:00,2024-11-30 04:00:00
+Stadt Mannheim,Channel 2 OUT,100042619,2020-08-01 01:00:00,2024-11-30 04:00:00
+Stadt Mannheim,Channel 3 IN,100042619,2020-08-01 01:00:00,2024-11-30 04:00:00
+Stadt Mannheim,Channel 4 OUT,100042619,2020-08-01 01:00:00,2024-11-30 04:00:00
+Stadt Mannheim,Neckarauer Übergang -Schwetzinger Str. Fahrräder IN,100042619,2018-10-22 00:00:00,2020-07-31 23:00:00
+Stadt Mannheim,Neckarauer Übergang -Schwetzinger Str. Fahrräder OUT,100042619,2018-10-22 00:00:00,2020-07-31 23:00:00
+Stadt Mannheim,Lindenhof (Richtung Jugendherberge) Radfahrer IN,100042620,2018-10-23 00:00:00,2024-11-30 04:00:00
+Stadt Mannheim,Lindenhof (Richtung Jugendherberge) Radfahrer OUT,100042620,2018-10-23 00:00:00,2024-11-30 04:00:00
+Stadt Mannheim,Feudenheimstr. stadtauswärts [Bike IN],300033853,2022-12-15 10:00:00,2024-12-01 03:00:00
+Stadt Mannheim,Feudenheimstr. stadtauswärts [Bike OUT],300033853,2022-12-15 10:00:00,2024-12-01 03:00:00
+Stadt Mannheim,Feudenheimstr. stadtauswärts [Pedestrian IN],300033853,2024-03-11 10:00:00,2024-03-11 10:00:00
+Stadt Mannheim,Feudenheimstr. stadtauswärts [Pedestrian OUT],300033853,2024-03-11 10:00:00,2024-03-11 10:00:00
+Stadt Mannheim,Luzenbergstr. Fahrräder IN,300034898,2022-12-15 00:00:00,2024-10-22 04:00:00
+Stadt Mannheim,Luzenbergstr. Fahrräder OUT,300034898,2022-12-15 00:00:00,2024-10-22 04:00:00
+Stadt Mannheim,Feudenheimerstr. stadteinwärts Fahrräder IN,300033855,2023-01-25 10:00:00,2024-11-30 23:00:00
+Stadt Mannheim,Feudenheimerstr. stadteinwärts Fahrräder OUT,300033855,2023-01-25 10:00:00,2024-11-30 23:00:00
+Stadt Mannheim,B38. RI. AUS Fahrräder IN,300034899,2023-01-25 00:00:00,2024-11-30 05:00:00
+Stadt Mannheim,B38. RI. AUS Fahrräder OUT,300034899,2023-01-25 00:00:00,2024-11-30 05:00:00
+Stadt Mannheim,Theodor-Heuss-Anlage. RI. IN. Fahrräder IN,300034900,2023-01-25 13:00:00,2024-12-01 02:00:00
+Stadt Mannheim,Theodor-Heuss-Anlage. RI. IN. Fahrräder OUT,300034900,2023-01-25 13:00:00,2024-12-01 02:00:00
+Stadt Mannheim,Theodor-Heuss-Anlage. RI. AUS Fahrräder IN,300034901,2023-01-25 13:00:00,2024-11-30 23:00:00
+Stadt Mannheim,Theodor-Heuss-Anlage. RI. AUS Fahrräder OUT,300034901,2023-01-25 13:00:00,2024-11-30 23:00:00
+Stadt Mannheim,Fernmeldeturm. Fahrräder IN,300034976,2023-01-25 11:00:00,2024-11-30 04:00:00
+Stadt Mannheim,Fernmeldeturm. Fahrräder OUT,300034976,2023-01-25 11:00:00,2024-11-30 04:00:00
+Stadt Kirchheim unter Teck,Barometer Kirchheim u. Teck,100013457,2014-04-17 00:00:00,2024-11-30 04:00:00
+Stadt Kirchheim unter Teck,Barometer Kirchheim u. Teck [Bike],100013457,2020-11-19 05:00:00,2024-11-30 04:00:00
+Stadt Heidelberg,Ernst-Walz-Brücke Ri. Süd,100048811,2014-06-01 01:00:00,2024-11-30 04:00:00
+Stadt Heidelberg,Ernst-Walz-Brücke Ri. Nord,100048811,2014-06-01 01:00:00,2024-11-30 04:00:00
+Stadt Heidelberg,Ernst-Walz-Brücke West - alt,100050030,2014-06-01 01:00:00,2018-10-10 23:00:00
+Stadt Heidelberg,Channel 1 Richtung West,100012161,2015-11-01 01:00:00,2024-11-30 04:00:00
+Stadt Heidelberg,Channel 2 Richtung Ost,100012161,2015-11-01 01:00:00,2024-11-30 04:00:00
+Stadt Heidelberg,Channel 3 Richtung West,100012161,2020-10-26 04:00:00,2024-11-30 04:00:00
+Stadt Heidelberg,Channel 5 Richtung West,100012161,2020-10-26 04:00:00,2024-11-30 04:00:00
+Stadt Heidelberg,Channel 4 Richtung Ost,100012161,2020-10-26 04:00:00,2024-11-30 04:00:00
+Stadt Heidelberg,Channel 6 Richtung Ost,100012161,2020-10-26 04:00:00,2024-11-30 04:00:00
+Stadt Heidelberg,Richtung SÜD,100012608,2015-11-01 01:00:00,2024-11-30 04:00:00
+Stadt Heidelberg,Richtung NORD,100012608,2015-11-01 01:00:00,2024-11-30 04:00:00
+Stadt Heidelberg,Gaisbergstraße [Bike IN],100012608,2020-10-26 05:00:00,2024-11-30 04:00:00
+Stadt Heidelberg,Gaisbergstraße [Bike OUT],100012608,2020-10-26 05:00:00,2024-11-30 04:00:00
+Stadt Heidelberg,Richtung stadteinwärts,100013034,2015-11-01 01:00:00,2024-11-30 04:00:00
+Stadt Heidelberg,Richtung stadtauswärts,100013034,2015-11-01 01:00:00,2024-11-30 04:00:00
+Stadt Heidelberg,Straße stadteinwärts,100013034,2015-11-01 01:00:00,2024-11-30 04:00:00
+Stadt Heidelberg,Mannheimer Straße [Bike IN],100013034,2020-10-26 04:00:00,2024-11-30 04:00:00
+Stadt Heidelberg,Mannheimer Straße [Bike OUT],100013034,2020-10-26 04:00:00,2024-11-30 04:00:00
+Stadt Heidelberg,Thedor-Heuss-Brücke Ri. Süd,100048812,2018-07-05 00:00:00,2024-12-01 03:00:00
+Stadt Heidelberg,Thedor-Heuss-Brücke Ri. Nord,100048812,2018-07-05 00:00:00,2024-12-01 03:00:00
+Stadt Heidelberg,Rohrbacher Straße Ri. Süd,100048813,2018-10-11 00:00:00,2024-11-26 04:00:00
+Stadt Heidelberg,Rohrbacher Straße Ri. Nord,100048813,2018-10-11 00:00:00,2024-11-26 04:00:00
+Stadt Heidelberg,Liebermannstraße Ri. Süd,100048814,2018-10-11 00:00:00,2024-11-26 04:00:00
+Stadt Heidelberg,Liebermannstraße Ri. Nord,100048814,2018-10-11 00:00:00,2024-11-26 04:00:00
+Stadt Heidelberg,Channel 1 IN,100049883,2019-02-01 01:00:00,2024-10-30 15:00:00
+Stadt Heidelberg,Channel 2 OUT,100049883,2019-02-01 01:00:00,2024-10-30 15:00:00
+Stadt Heidelberg,Channel 3 IN,100049883,2019-02-01 01:00:00,2024-10-30 15:00:00
+Stadt Heidelberg,Channel 4 OUT,100049883,2019-02-01 01:00:00,2024-10-30 15:00:00
+Stadt Heidelberg,Ziegelhäuser Landstraße IN,100049901,2019-02-01 01:00:00,2023-09-04 18:00:00
+Stadt Heidelberg,Ziegelhäuser Landstraße OUT,100049901,2019-02-01 01:00:00,2023-09-04 18:00:00
+Stadt Heidelberg,Ziegelhäuser Landstraße [Bike IN],100049901,2020-10-26 05:00:00,2023-09-04 18:00:00
+Stadt Heidelberg,Ziegelhäuser Landstraße [Bike OUT],100049901,2020-10-26 05:00:00,2023-09-04 18:00:00
+Stadt Heidelberg,Kurfürstenanlage Süd,100050750,2019-02-01 01:00:00,2024-11-30 04:00:00
+Stadt Heidelberg,Kurfürstenanlage Nord,100050750,2019-02-01 01:00:00,2024-11-30 04:00:00
+Stadt Heidelberg,Channel 1 IN,100056769,2020-02-01 01:00:00,2024-12-01 01:00:00
+Stadt Heidelberg,Channel 2 OUT,100056769,2020-02-01 01:00:00,2024-12-01 01:00:00
+Stadt Heidelberg,Channel 3 IN,100056769,2020-02-01 01:00:00,2024-12-01 01:00:00
+Stadt Heidelberg,Channel 4 OUT,100056769,2020-02-01 01:00:00,2024-12-01 01:00:00
+Stadt Heidelberg,Channel 1 IN,100056770,2020-02-01 01:00:00,2024-10-29 15:00:00
+Stadt Heidelberg,Channel 2 OUT,100056770,2020-02-01 01:00:00,2024-10-29 15:00:00
+Stadt Heidelberg,Channel 3 IN,100056770,2020-02-01 01:00:00,2024-10-29 15:00:00
+Stadt Heidelberg,Channel 4 OUT,100056770,2020-02-01 01:00:00,2024-10-29 15:00:00
+Stadt Heidelberg,Channel 5 IN,100056770,2020-02-01 01:00:00,2024-10-29 15:00:00
+Stadt Heidelberg,Channel 6 OUT,100056770,2020-02-01 01:00:00,2024-10-29 15:00:00
+Stadt Heidelberg,Berliner Straße Ost,100059184,2020-02-01 01:00:00,2024-12-01 02:00:00
+Stadt Heidelberg,Berliner Straße West,100059184,2020-04-01 01:00:00,2024-12-01 01:00:00
+Stadt Heidelberg,Eppelheimer Str. IN,100059187,2020-02-01 01:00:00,2024-12-01 02:00:00
+Stadt Heidelberg,Eppelheimer Str. OUT,100059187,2020-02-01 01:00:00,2024-12-01 02:00:00
+Stadt Offenburg,Hauptstraße neu,100036542,2017-07-06 00:00:00,2023-03-14 04:00:00
+Stadt Ludwisburg,Marbacher Straße - Favoritepark Stadteinwärts,300018447,2017-09-27 00:00:00,2024-11-30 04:00:00
+Stadt Ludwisburg,Marbacher Straße - Favoritepark Stadtauswärts,300018447,2017-09-27 00:00:00,2024-11-30 04:00:00
+Stadt Ludwisburg,Alleenstraße Stadteinwärts A,100041999,2017-12-19 00:00:00,2024-11-30 04:00:00
+Stadt Ludwisburg,Alleenstraße Stadtauswärts A,100041999,2017-12-19 00:00:00,2024-11-30 04:00:00
+Stadt Ludwisburg,Alleenstraße Stadteinwärts B,100041999,2017-12-19 00:00:00,2024-11-30 04:00:00
+Stadt Ludwisburg,Alleenstraße Stadtauswärts B,100041999,2017-12-19 00:00:00,2024-11-30 04:00:00
+Stadt Ludwisburg,Alleenstraße Stadteinwärts C,100041999,2017-12-19 00:00:00,2024-11-30 04:00:00
+Stadt Ludwisburg,Alleenstraße Stadtauswärts C,100041999,2017-12-19 00:00:00,2024-11-30 04:00:00
+Stadt Ludwisburg,Marbacher Straße - Neckarbrücke Stadteinwärts,300018445,2019-03-27 00:00:00,2024-11-30 05:00:00
+Stadt Ludwisburg,Marbacher Straße - Neckarbrücke Stadtauswärts,300018445,2019-03-27 00:00:00,2024-11-30 05:00:00
+Stadt Ludwisburg,Schlieffenstraße Stadteinwärts A,300014392,2020-11-25 14:00:00,2024-12-01 03:00:00
+Stadt Ludwisburg,Schlieffenstraße Stadtauswärts A,300014392,2020-11-25 14:00:00,2024-12-01 03:00:00
+Stadt Ludwisburg,Schlieffenstraße Stadteinwärts B,300014392,2020-11-25 14:00:00,2024-12-01 03:00:00
+Stadt Ludwisburg,Schlieffenstraße Stadtauswärts B,300014392,2020-11-25 14:00:00,2024-12-01 03:00:00
+Stadt Ludwisburg,Fuchshof stadteinwärts,300014706,2020-12-07 13:00:00,2024-12-01 03:00:00
+Stadt Ludwisburg,Fuchshof stadtauswärts,300014706,2020-12-07 13:00:00,2024-12-01 03:00:00
+Stadt Ludwisburg,Seestraße Stadtauswärts AB,300014866,2020-12-18 11:00:00,2024-11-30 04:00:00
+Stadt Ludwisburg,Seestraße Stadteinwärts AB,300014866,2020-12-18 11:00:00,2024-11-30 04:00:00
+Stadt Ludwisburg,Seestraße Stadtauswärts CD,300014866,2020-12-18 11:00:00,2024-11-30 04:00:00
+Stadt Ludwisburg,Seestraße Stadteinwärts CD,300014866,2020-12-18 11:00:00,2024-11-30 04:00:00
+Stadt Ludwisburg,Schlossstraße Stadteinwärts A,300015452,2021-01-29 15:00:00,2024-11-30 04:00:00
+Stadt Ludwisburg,Schlossstraße Stadtauswärts A,300015452,2021-01-29 15:00:00,2024-11-30 04:00:00
+Stadt Ludwisburg,Schlossstraße Stadteinwärts B,300015452,2021-01-29 15:00:00,2024-11-30 04:00:00
+Stadt Ludwisburg,Schlossstraße Stadtauswärts B,300015452,2021-01-29 15:00:00,2024-11-30 04:00:00
+Stadt Ludwisburg,Schlossstraße Stadteinwärts C,300015452,2021-01-29 15:00:00,2024-11-30 04:00:00
+Stadt Ludwisburg,Schlossstraße Stadtauswärts C,300015452,2021-01-29 15:00:00,2024-11-30 04:00:00
+Stadt Ludwisburg,Kesseläcker Stadteinwärts A,300015457,2021-01-15 15:00:00,2024-11-30 04:00:00
+Stadt Ludwisburg,Kesseläcker Stadtauswärts A,300015457,2021-01-15 15:00:00,2024-11-30 04:00:00
+Stadt Ludwisburg,Kesseläcker Stadteinwärts B,300015457,2021-01-15 15:00:00,2024-11-30 04:00:00
+Stadt Ludwisburg,Kesseläcker Stadtauswärts B,300015457,2021-01-15 15:00:00,2024-11-30 04:00:00
+Stadt Ludwisburg,Zugwiesen Stadteinwärts,300015458,2021-01-29 15:00:00,2024-11-30 23:00:00
+Stadt Ludwisburg,Zugwiesen Stadtauswärts,300015458,2021-01-29 15:00:00,2024-11-30 23:00:00
+Stadt Ludwisburg,Solitudeallee Stadteinwärts,300015618,2021-01-14 11:00:00,2024-12-01 01:00:00
+Stadt Ludwisburg,Solitudeallee Stadtauswärts,300015618,2021-01-14 11:00:00,2024-12-01 01:00:00
+Stadt Ludwisburg,Aldinger Straße Stadteinwärts,300018442,2021-01-15 15:00:00,2024-11-30 23:00:00
+Stadt Ludwisburg,Aldinger Straße Stadtauswärts,300018442,2021-01-15 15:00:00,2024-11-30 04:00:00
+Stadt Ludwisburg,Bottwaratlstraße Stadteinwärts,300018443,2021-01-27 08:00:00,2024-12-01 03:00:00
+Stadt Ludwisburg,Bottwartalstraße Stadtauswärts,300018443,2021-01-27 08:00:00,2024-12-01 03:00:00
+Stadt Ludwisburg,Bismarckstraße Stadteinwärts A,300015617,2021-02-09 11:00:00,2024-11-30 04:00:00
+Stadt Ludwisburg,Bismarckstraße Stadtauswärts A,300015617,2021-02-09 11:00:00,2024-11-30 04:00:00
+Stadt Ludwisburg,Bismarckstraße Stadteinwärts B,300015617,2021-02-09 11:00:00,2024-11-30 04:00:00
+Stadt Ludwisburg,Bismarckstraße Stadtauswärts B,300015617,2021-02-09 11:00:00,2024-11-30 04:00:00
+Stadt Ludwisburg,Bismarckstraße Stadteinwärts C,300015617,2021-02-09 11:00:00,2024-11-30 04:00:00
+Stadt Ludwisburg,Bismarckstraße Stadtauswärts C,300015617,2021-02-09 11:00:00,2024-11-30 04:00:00
+Stadt Ludwisburg,Bismarckstraße PKW Stadteinwärts,300015617,2024-02-14 00:00:00,2024-11-30 04:00:00
+Stadt Ludwisburg,Bismarckstraße PKW Stadtauswärts,300015617,2024-02-14 00:00:00,2024-11-30 04:00:00
+Stadt Ludwisburg,Königinallee Stadteinwärts,300019805,2021-02-03 11:00:00,2024-11-30 04:00:00
+Stadt Ludwisburg,Königinallee Stadtauswärts,300019805,2021-02-03 11:00:00,2024-11-30 04:00:00
+Stadt Ludwisburg,Straße A & B IN,300020056,2021-02-02 00:00:00,2024-12-01 03:00:00
+Stadt Ludwisburg,Straße A & B OUT,300020056,2021-02-02 00:00:00,2024-12-01 03:00:00
+Stadt Ludwisburg,Radweg C & D IN,300020056,2021-02-02 00:00:00,2024-12-01 03:00:00
+Stadt Ludwisburg,Radweg C & D OUT,300020056,2021-02-02 00:00:00,2024-12-01 03:00:00
+Stadt Konstanz,Herosepark Fahrräder stadteinwärts,100046462,2018-08-07 00:00:00,2024-11-30 04:00:00
+Stadt Konstanz,Herosepark Fahrräder stadtauswärts,100046462,2018-08-07 00:00:00,2024-11-30 04:00:00
+Stadt Konstanz,Bahnhaltepunkt Fürstenberg Fahrräder,300016792,2021-04-26 00:00:00,2021-05-20 23:00:00
+Stadt Konstanz,S-Bahn Haltestelle Fürstenberg Cyclist IN,300016792,2021-05-21 00:00:00,2024-12-01 03:00:00
+Stadt Konstanz,S-Bahn Haltestelle Fürstenberg Cyclist OUT,300016792,2021-05-21 00:00:00,2024-12-01 03:00:00
+Stadt Konstanz,Bahnhaltepunkt Fürstenberg Fahrräder stadteinwärts,300016792,2022-09-01 16:00:00,2023-07-19 09:00:00
+Stadt Konstanz,Bahnhaltepunkt Fürstenberg Fahrräder stadtauswärts,300016792,2022-09-01 16:00:00,2023-07-19 09:00:00
+Stadt Konstanz,Bahnhaltepunkt Petershausen Fahrräder,300016793,2021-04-26 00:00:00,2021-05-20 23:00:00
+Stadt Konstanz,S-Bahn-Haltestelle Petershausen-Süd Cyclist IN,300016793,2021-05-21 00:00:00,2024-12-01 03:00:00
+Stadt Konstanz,S-Bahn-Haltestelle Petershausen-Süd Cyclist OUT,300016793,2021-05-21 00:00:00,2024-12-01 03:00:00
+Stadt Konstanz,Bahnhaltepunkt Petershausen Fahrräder stadteinwärts,300016793,2022-09-01 16:00:00,2023-07-19 08:00:00
+Stadt Konstanz,Bahnhaltepunkt Petershausen Fahrräder stadtauswärts,300016793,2022-09-01 16:00:00,2023-07-19 08:00:00
+Stadt Konstanz,Alte Rheinbrücke Fahrräder stadteinwärts,300031079,2023-03-23 11:00:00,2024-12-01 01:00:00
+Stadt Konstanz,Alte Rheinbrücke Fahrräder stadtauswärts,300031079,2023-03-23 11:00:00,2024-12-01 01:00:00
+Stadt Konstanz,Friedrichstraße Fahrräder stadteinwärts,300031088,2023-03-23 16:00:00,2024-12-01 02:00:00
+Stadt Konstanz,Friedrichstraße Fahrräder stadtauswärts,300031088,2023-03-23 16:00:00,2024-12-01 02:00:00
+Landkreis Böblingen,Römerstraße Personen Stuttgart,100060133,2019-05-30 00:00:00,2024-12-01 03:00:00
+Landkreis Böblingen,Römerstraße Personen Böblingn,100060133,2019-05-30 00:00:00,2024-12-01 03:00:00
+Landkreis Böblingen,Römerstraße Fahrräder Stuttgart,100060133,2019-05-30 00:00:00,2024-12-01 03:00:00
+Landkreis Böblingen,Römerstraße Fahrräder Böblingn,100060133,2019-05-30 00:00:00,2024-12-01 03:00:00
+Landkreis Böblingen,Böblingen IN,300014757,2020-12-21 09:00:00,2024-12-01 03:00:00
+Landkreis Böblingen,Ehningen OUT,300014757,2020-12-21 09:00:00,2024-12-01 03:00:00
+Ravensburg TWS GmbH and Co KG,05 Ri. Ravensburg,100056852,2019-11-28 00:00:00,2024-11-30 05:00:00
+Ravensburg TWS GmbH and Co KG,05 Ri Weingarten,100056852,2019-11-28 00:00:00,2024-11-30 05:00:00
+Ravensburg TWS GmbH and Co KG,06  Ri. Ost,100056853,2019-11-28 00:00:00,2024-11-30 23:00:00
+Ravensburg TWS GmbH and Co KG,06  Ri. West,100056853,2019-11-28 00:00:00,2024-11-30 23:00:00
+Ravensburg TWS GmbH and Co KG,07  Ri. bergauf,100056854,2019-11-28 00:00:00,2024-12-01 01:00:00
+Ravensburg TWS GmbH and Co KG,07  Ri. bergab,100056854,2019-11-28 00:00:00,2024-12-01 01:00:00
+Ravensburg TWS GmbH and Co KG,08 RV Ri. TWS,100056855,2019-11-28 00:00:00,2024-11-30 23:00:00
+Ravensburg TWS GmbH and Co KG,08 RV Bahnhofstr. Fahrräder leer,100056855,2019-11-28 00:00:00,2024-11-30 23:00:00
+Ravensburg TWS GmbH and Co KG,08 RV Bahnhofstr. Fahrräder Ri. TWS,100056855,2019-11-28 00:00:00,2024-11-30 23:00:00
+Ravensburg TWS GmbH and Co KG,03 RV KH Ost bergab,100056850,2020-02-18 00:00:00,2024-11-30 04:00:00
+Ravensburg TWS GmbH and Co KG,03 RV KH Ost bergauf,100056850,2020-02-18 00:00:00,2024-11-30 04:00:00
+Ravensburg TWS GmbH and Co KG,04 RV  KH West  bergab,100056851,2020-02-18 00:00:00,2024-11-30 04:00:00
+Ravensburg TWS GmbH and Co KG,04 RV  KH West  bergauf,100056851,2020-02-18 00:00:00,2024-11-30 04:00:00
+Ravensburg TWS GmbH and Co KG,Doggenriedstraße Ri. Süd,300014844,2020-12-17 11:00:00,2024-12-01 01:00:00
+Ravensburg TWS GmbH and Co KG,Doggenriedstraße Ri. Nord,300014844,2020-12-17 11:00:00,2024-12-01 01:00:00
+Stadt Ulm,Blautal Lupferbrücke Ri. SO . Stadtmitte,100057246,2020-01-17 00:00:00,2024-12-01 02:00:00
+Stadt Ulm,Blautal Lupferbrücke Ri. NW,100057246,2020-01-17 00:00:00,2024-12-01 02:00:00
+Stadt Ulm,Blautal Lupferbrücke Ri. SO - Stadtmitte,100057246,2020-01-17 00:00:00,2024-12-01 02:00:00
+Stadtverwaltung Aalen,Radweg am Kocher Fahrräder IN 1,300015196,2020-12-24 00:00:00,2024-12-01 03:00:00
+Stadtverwaltung Aalen,Radweg am Kocher Fahrräder OUT 2,300015196,2020-12-24 00:00:00,2024-12-01 03:00:00
+Stadtverwaltung Aalen,Radweg am Kocher Fahrräder IN 3,300015196,2021-01-20 11:00:00,2024-12-01 03:00:00
+Stadtverwaltung Aalen,Radweg am Kocher Fahrräder OUT 4,300015196,2021-01-20 11:00:00,2024-12-01 03:00:00
+Stadt Reutlingen,Tübinger Tor Fahrräder zum Rathaus,300017238,2021-05-11 00:00:00,2024-12-01 01:00:00
+Stadt Reutlingen,Tübinger Tor Fahrräder zur Stadthalle,300017238,2021-05-11 00:00:00,2024-12-01 01:00:00
+Stadt Reutlingen,Charlottenstraße PKW zur Berufsschule,300017241,2021-05-11 00:00:00,2024-12-01 03:00:00
+Stadt Reutlingen,Charlottenstraße PKW zur Planie,300017241,2021-05-11 00:00:00,2024-12-01 03:00:00
+Stadt Reutlingen,Charlottenstraße Fahrräder zur Berufsschule,300017241,2021-05-11 00:00:00,2024-12-01 03:00:00
+Stadt Reutlingen,Charlottenstraße Fahrräder zur Planie,300017241,2021-05-11 00:00:00,2024-12-01 03:00:00
+Stadt Reutlingen,Konrad-Adenauer-Straße Fahrräder zum Westbahnhof,300017242,2021-05-11 00:00:00,2024-11-30 23:00:00
+Stadt Reutlingen,Konrad-Adenauer-Straße Fahrräder zum Hohbuchknoten,300017242,2021-05-11 00:00:00,2024-11-30 23:00:00
+Stadt Reutlingen,Metzgerstraße Fahrräder zum Weibermarkt,300017243,2021-05-11 00:00:00,2024-11-30 23:00:00
+Stadt Reutlingen,Metzgerstraße Fahrräder zum Albtorplatz,300017243,2021-05-11 00:00:00,2024-11-30 23:00:00
+Stadt Reutlingen,Metzgerstraße PKW,300017243,2021-05-11 00:00:00,2024-11-30 23:00:00
+Stadt Reutlingen,Bellinostraße Fahrräder zur Paul-Pfitzer-Straße,300017245,2021-05-11 00:00:00,2024-12-01 01:00:00
+Stadt Reutlingen,Bellinostraße Fahrräder zur Pomologie,300017245,2021-05-11 00:00:00,2024-12-01 01:00:00
+Stadt Reutlingen,Bellinostraße PKW,300017245,2021-05-11 00:00:00,2024-12-01 01:00:00
+Stadt Reutlingen,Hindenburgstraße Fahrräder zum Lindachknoten,300017246,2021-05-11 00:00:00,2024-11-30 23:00:00
+Stadt Reutlingen,Hindenburgstraße Fahrräder zur Pomologie,300017246,2021-05-11 00:00:00,2024-11-30 23:00:00
+Stadt Reutlingen,Hindenburgstraße PKW,300017246,2021-05-11 00:00:00,2024-11-30 23:00:00
+Stadt Reutlingen,Moltkestraße Fahrräder zum Volkspark,300017247,2021-05-11 00:00:00,2024-12-01 02:00:00
+Stadt Reutlingen,Moltkestraße Fahrräder zum Hohbuchknoten,300017247,2021-05-11 00:00:00,2024-12-01 02:00:00
+Stadt Reutlingen,Unter den Linden Fahrräder zur Innenstadt,300017248,2021-05-11 00:00:00,2024-12-01 02:00:00
+Stadt Reutlingen,Unter den Linden Fahrräder zur Rommelsbacher Straße,300017248,2021-05-11 00:00:00,2024-12-01 02:00:00
+Landratsamt Rems-Murr-Kreis,Backnang (Plattenwald) - Oppenweiler Straße (K1897) Fahrräder IN,300020139,2021-09-21 00:00:00,2024-12-01 03:00:00
+Landratsamt Rems-Murr-Kreis,Backnang (Plattenwald) - Oppenweiler Straße (K1897) Fahrräder OUT,300020139,2021-09-21 00:00:00,2024-12-01 03:00:00
+Landratsamt Rems-Murr-Kreis,Backnang (Plattenwald) - Oppenweiler Straße (K1897) [Bike IN],300020139,2023-05-04 09:00:00,2024-12-01 03:00:00
+Landratsamt Rems-Murr-Kreis,Backnang (Plattenwald) - Oppenweiler Straße (K1897) [Bike OUT],300020139,2023-05-04 09:00:00,2024-12-01 03:00:00
+Landratsamt Rems-Murr-Kreis,Kirchberg an der Murr - Marbacher Straße (K1834)  Fahrräder IN,300020140,2021-09-21 00:00:00,2024-11-30 03:00:00
+Landratsamt Rems-Murr-Kreis,Kirchberg an der Murr - Marbacher Straße (K1834)  Fahrräder OUT,300020140,2021-09-21 00:00:00,2024-11-30 03:00:00
+Landratsamt Rems-Murr-Kreis,Weinstadt (Beutelsbach) - Schorndorfer Straße - K1866 Fahrräder IN,300020143,2021-09-22 00:00:00,2024-11-30 03:00:00
+Landratsamt Rems-Murr-Kreis,Weinstadt (Beutelsbach) - Schorndorfer Straße - K1866 Fahrräder OUT,300020143,2021-09-22 00:00:00,2024-11-30 03:00:00
+Landratsamt Rems-Murr-Kreis,Korb (K1912) Fahrräder IN,300029573,2022-12-13 00:00:00,2024-11-30 04:00:00
+Landratsamt Rems-Murr-Kreis,Korb (K1912) Fahrräder OUT,300029573,2022-12-13 00:00:00,2024-11-30 04:00:00
+Landratsamt Rems-Murr-Kreis,Urbach - Schorndorf (K 1881) Fahrräder IN,300029574,2022-12-13 00:00:00,2024-12-01 02:00:00
+Landratsamt Rems-Murr-Kreis,Urbach - Schorndorf (K 1881) Fahrräder OUT,300029574,2022-12-13 00:00:00,2024-12-01 02:00:00
+Landratsamt Rems-Murr-Kreis,Hohnweiler - Oberweissach (K 1838) Fahrräder IN,300029583,2022-12-16 00:00:00,2024-11-30 05:00:00
+Landratsamt Rems-Murr-Kreis,Hohnweiler - Oberweissach (K 1838) Fahrräder OUT,300029583,2022-12-16 00:00:00,2024-11-30 05:00:00
+Landratsamt Rems-Murr-Kreis,Unterweissach (K1907) Fahrräder IN,300029584,2022-12-16 00:00:00,2024-11-30 23:00:00
+Landratsamt Rems-Murr-Kreis,Unterweissach (K1907) Fahrräder OUT,300029584,2022-12-16 00:00:00,2024-11-30 23:00:00
+Landratsamt Rems-Murr-Kreis,Höfen - Hertmannsweiler (K 1851) Fahrräder IN,300029585,2022-12-16 00:00:00,2024-11-30 23:00:00
+Landratsamt Rems-Murr-Kreis,Höfen - Hertmannsweiler (K 1851) Fahrräder OUT,300029585,2022-12-16 00:00:00,2024-11-30 23:00:00
+Stadt Singen,Fahrradunterführung Romeiastraße Fahrräder Richtung Nord,300024049,2022-05-11 12:00:00,2024-12-01 01:00:00
+Stadt Singen,Fahrradunterführung Romeiastraße Fahrräder Richtung Süd,300024049,2022-05-11 12:00:00,2024-12-01 01:00:00
