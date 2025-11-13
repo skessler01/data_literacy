@@ -1,0 +1,15 @@
+name: data_literacy_project
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - matplotlib
+  - jupyter
+  - scipy
+  - requests
+  - pip:
+    - openmeteo-requests
+    - requests-cache
