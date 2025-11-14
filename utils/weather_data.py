@@ -50,19 +50,20 @@ def get_weather_data(start_date, end_date, longitude, latitude, forecast):
 
     return weather_data
 
-def fuse_bike_weather(bike_data, weather_data, forecast_weather_data):
+
+def get_full_weather_data(start_date, end_date, longitude, latitude):
+    forecast_weather_data = get_weather_data(start_date, end_date, longitude, latitude, True)
+    actual_weather_data = get_weather_data(start_date, end_date, longitude, latitude, False)
+    forecast_weather_data['date'] = pd.to_datetime(forecast_weather_data['date'], utc=True)
+    actual_weather_data['date'] = pd.to_datetime(actual_weather_data['date'], utc=True)
+    merged_data = pd.merge(actual_weather_data, forecast_weather_data, on='date', how='inner')
+    return merged_data
+
+def merge_bike_weather(bike_data, weather_data):
     bike_data = bike_data.copy()
     weather_data = weather_data.copy()
-    forecast_weather_data = forecast_weather_data.copy()
-
     bike_data['timestamp'] = pd.to_datetime(bike_data['timestamp'], utc=True)
     weather_data['date'] = pd.to_datetime(weather_data['date'], utc=True)
-    forecast_weather_data['date'] = pd.to_datetime(forecast_weather_data['date'], utc=True)
-
     weather_data = weather_data.rename(columns={'date': 'timestamp'})  # rename column for easier merge
-    forecast_weather_data = forecast_weather_data.rename(columns={'date': 'timestamp'})
-
     fused_data = pd.merge(bike_data, weather_data, on='timestamp', how='inner')  # merge
-    fused_data = pd.merge(fused_data, forecast_weather_data, on='timestamp', how='inner')
-
     return fused_data
