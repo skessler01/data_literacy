@@ -12,7 +12,7 @@ def filter_location_and_time(data, locations, start_date, end_date):
     return filtered_data
 
 
-def get_daily_count_per_site(data, counter_site_id, date):
+def get_daily_counter_site_count(data, counter_site_id, date):
     """
     Berechnet den Tageswert (Summe aller Channels) einer Zählstelle.
 
@@ -41,6 +41,51 @@ def get_daily_count_per_site(data, counter_site_id, date):
         return 0, df_day
 
     # Tageswert berechnen (über alle Channels)
-    tageswert = df_day['zählstand'].sum()
+    daily_count = df_day['zählstand'].sum()
 
-    return tageswert, df_day
+    return daily_count, df_day
+
+# Tageswert eines Standorts
+standort = "Stadt Tübingen"
+date = "2024-01-01" # YYYY-MM-DD
+
+
+def get_normalized_daily_city_count(data, standort, date):
+    """
+    Berechnet den durchschnittlichen Tageswert aller aktiven Counter-Sites eines Standorts.
+
+    Parameters:
+        data (pd.DataFrame): Datensatz mit Spalten 'standort', 'counter_site_id', 'iso_timestamp', 'zählstand'
+                             iso_timestamp muss datetime64 sein.
+        standort (str): Name des Standorts, z.B. "Stadt Tübingen"
+        date (str): Datum im Format "YYYY-MM-DD"
+
+    Returns:
+        float: Durchschnittlicher Tageswert über alle aktiven Counter-Sites
+        int: Anzahl aktiver Counter-Sites
+        int: Summe der Daily Counts über alle aktiven Counter-Sites
+    """
+    # Alle Counter-Sites des Standorts
+    all_sites = data[data['standort'] == standort]['counter_site_id'].unique()
+    
+    daily_counts = []
+
+    # Prüfen, welche Counter am Tag aktiv sind
+    target_date = pd.to_datetime(date).date()
+    
+    for cs_id in all_sites:
+        df_site_day = data[
+            (data['counter_site_id'] == cs_id) &
+            (data['iso_timestamp'].dt.date == target_date)
+        ]
+        if not df_site_day.empty:
+            daily_sum = df_site_day['zählstand'].sum()
+            daily_counts.append(daily_sum)
+
+    # Berechnung des durchschnittlichen Tageswerts
+    if daily_counts:
+        normalized_daily_count = sum(daily_counts) / len(daily_counts)
+    else:
+        normalized_daily_count = None
+
+    return normalized_daily_count, len(daily_counts), sum(daily_counts) if daily_counts else 0
