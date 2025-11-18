@@ -65,6 +65,7 @@ def get_normalized_daily_city_count(data, standort, date):
         int: Anzahl aktiver Counter-Sites
         int: Summe der Daily Counts über alle aktiven Counter-Sites
     """
+    # TODO: Neue Counter werden vermutlich nicht um 00:00 eines Tages initialisiert. Besser normalisieren: pro Spalte
     # Alle Counter-Sites des Standorts
     all_sites = data[data['standort'] == standort]['counter_site_id'].unique()
     
