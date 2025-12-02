@@ -20,7 +20,8 @@ def get_weather_data(start_date, end_date, longitude, latitude, forecast):
         "longitude": longitude,
         "start_date": str(start_date),
         "end_date": str(end_date),
-        "hourly": ["temperature_2m", "rain", "snowfall"],
+	    "hourly": ["temperature_2m", "apparent_temperature", "rain", "snowfall"],
+        "timezone": "Europe/Berlin",
     }
     responses = openmeteo.weather_api(url, params=params)
 
@@ -28,21 +29,19 @@ def get_weather_data(start_date, end_date, longitude, latitude, forecast):
     response = responses[0]
     hourly = response.Hourly()
     hourly_temperature_2m = hourly.Variables(0).ValuesAsNumpy()
-    hourly_rain = hourly.Variables(1).ValuesAsNumpy()
-    hourly_snowfall = hourly.Variables(2).ValuesAsNumpy()
+    hourly_apparent_temperature = hourly.Variables(1).ValuesAsNumpy()
+    hourly_rain = hourly.Variables(2).ValuesAsNumpy()
+    hourly_snowfall = hourly.Variables(3).ValuesAsNumpy()
 
     hourly_data = {"date": pd.date_range(
         start=pd.to_datetime(hourly.Time(), unit="s", utc=True),
         end=pd.to_datetime(hourly.TimeEnd(), unit="s", utc=True),
         freq=pd.Timedelta(seconds=hourly.Interval()),
         inclusive="left"
-    ), "temperature_2m": hourly_temperature_2m, "rain": hourly_rain, "snowfall": hourly_snowfall}
+    ), "temperature_2m": hourly_temperature_2m, "apparent_temperature": hourly_apparent_temperature, "rain": hourly_rain, "snowfall": hourly_snowfall}
 
     hourly_dataframe = pd.DataFrame(data=hourly_data)
-    weather_data = hourly_dataframe[['date', 'rain', 'snowfall']].copy()
-    # Convert rain and snowfall to True/False
-    weather_data['rain'] = weather_data['rain'] > 0
-    weather_data['snowfall'] = weather_data['snowfall'] > 0
+    weather_data = hourly_dataframe[['date',"temperature_2m", "apparent_temperature", 'rain', 'snowfall']].copy()
 
     if forecast:
         weather_data = weather_data.rename(columns={'rain': 'forecast_rain'})
@@ -65,5 +64,5 @@ def merge_bike_weather(bike_data, weather_data):
     bike_data['timestamp'] = pd.to_datetime(bike_data['timestamp'], utc=True)
     weather_data['date'] = pd.to_datetime(weather_data['date'], utc=True)
     weather_data = weather_data.rename(columns={'date': 'timestamp'})  # rename column for easier merge
-    fused_data = pd.merge(bike_data, weather_data, on='timestamp', how='inner')  # merge
+    fused_data = pd.merge(bike_data, weather_data, on=['city','timestamp'], how='inner')  # merge
     return fused_data
