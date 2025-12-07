@@ -12,6 +12,7 @@ dependencies:
   - scipy
   - requests
   - openpyxl
+  - seaborn
   - plotly # for interactive plots
   - pip:
     - openmeteo-requests
