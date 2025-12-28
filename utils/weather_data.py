@@ -1,6 +1,7 @@
 import openmeteo_requests
 import pandas as pd
 import requests_cache
+import time
 
 
 def get_weather_data(start_date, end_date, longitude, latitude, forecast):
@@ -66,3 +67,44 @@ def merge_bike_weather(bike_data, weather_data):
     weather_data = weather_data.rename(columns={'date': 'timestamp'})  # rename column for easier merge
     fused_data = pd.merge(bike_data, weather_data, on=['city','timestamp'], how='inner')  # merge
     return fused_data
+
+def download_corresponding_weather_data(data):
+    # takes the coordinates from a dataset grouped by city and downloads the weather data
+    # corresponding to the time frame of the data. Saves weather data and
+    # @returns the corresponding weather data
+    city_coords = (
+        data[["city", "city_lat", "city_lon"]]
+        .drop_duplicates(subset="city")
+    )
+
+    start_date = pd.to_datetime(data["timestamp"], utc=True).min().date().isoformat()
+    end_date = pd.to_datetime(data["timestamp"], utc=True).max().date().isoformat()
+
+    print("Global start:", start_date)
+    print("Global end:", end_date)
+
+    weather_frames = []
+
+    for _, row in city_coords.iterrows():
+        city = row["city"]
+        lat = row["city_lat"]
+        lon = row["city_lon"]
+
+        print(f"Fetching weather for {city}: ({lat}, {lon})")
+
+        df_weather = get_weather_data(
+            start_date=start_date,
+            end_date=end_date,
+            longitude=lon,
+            latitude=lat,
+            forecast=False
+        )
+
+        df_weather["city"] = city
+        weather_frames.append(df_weather)
+
+        time.sleep(16)  # <-- important: sleep between requests
+
+    weather_data = pd.concat(weather_frames, ignore_index=True)
+    weather_data.to_csv("../data/weather_data.csv", index=False)
+    return weather_data
