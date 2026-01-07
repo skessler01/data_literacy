@@ -3,7 +3,6 @@ import pandas as pd
 import requests_cache
 import time
 
-
 def get_weather_data(start_date, end_date, longitude, latitude, forecast):
 
     # Setup the Open-Meteo API client with cache and retry on error
@@ -42,22 +41,81 @@ def get_weather_data(start_date, end_date, longitude, latitude, forecast):
     ), "temperature_2m": hourly_temperature_2m, "apparent_temperature": hourly_apparent_temperature, "rain": hourly_rain, "snowfall": hourly_snowfall}
 
     hourly_dataframe = pd.DataFrame(data=hourly_data)
-    weather_data = hourly_dataframe[['date',"temperature_2m", "apparent_temperature", 'rain', 'snowfall']].copy()
+    weather_data = hourly_dataframe.copy()
 
     if forecast:
-        weather_data = weather_data.rename(columns={'rain': 'forecast_rain'})
-        weather_data = weather_data.rename(columns={'snowfall': 'forecast_snowfall'})
+        weather_data = weather_data.rename(columns={
+            "temperature_2m": "forecast_temperature_2m",
+            "apparent_temperature": "forecast_apparent_temperature",
+            "rain": "forecast_rain",
+            "snowfall": "forecast_snowfall",
+        })
 
     return weather_data
 
 
 def get_full_weather_data(start_date, end_date, longitude, latitude):
-    forecast_weather_data = get_weather_data(start_date, end_date, longitude, latitude, True)
-    actual_weather_data = get_weather_data(start_date, end_date, longitude, latitude, False)
-    forecast_weather_data['date'] = pd.to_datetime(forecast_weather_data['date'], utc=True)
-    actual_weather_data['date'] = pd.to_datetime(actual_weather_data['date'], utc=True)
-    merged_data = pd.merge(actual_weather_data, forecast_weather_data, on='date', how='inner')
-    return merged_data
+    # --- 1. Actual weather: full range ---
+    actual_weather_data = get_weather_data(
+        start_date=start_date,
+        end_date=end_date,
+        longitude=longitude,
+        latitude=latitude,
+        forecast=False
+    )
+
+    # --- 2. Forecast weather: clipped range ---
+    forecast_start, forecast_end = clip_forecast_dates(start_date, end_date)
+
+    # Only fetch if there is any overlap
+    if pd.to_datetime(forecast_end) >= pd.to_datetime(forecast_start):
+        forecast_weather_data = get_weather_data(
+            start_date=forecast_start,
+            end_date=forecast_end,
+            longitude=longitude,
+            latitude=latitude,
+            forecast=True
+        )
+    else:
+        # No forecast data available; create empty frame with correct columns
+        forecast_weather_data = pd.DataFrame({
+            "date": [],
+            "forecast_temperature_2m": [],
+            "forecast_apparent_temperature": [],
+            "forecast_rain": [],
+            "forecast_snowfall": []
+        })
+
+    # --- 3. Merge with LEFT JOIN to preserve historic rows ---
+    actual_weather_data["date"] = pd.to_datetime(actual_weather_data["date"], utc=True)
+    forecast_weather_data["date"] = pd.to_datetime(forecast_weather_data["date"], utc=True)
+
+    merged = pd.merge(actual_weather_data, forecast_weather_data, on="date", how="left")
+    return merged
+from datetime import date
+
+FORECAST_MIN_DATE = date(2016, 1, 1)
+FORECAST_MAX_DATE = date(2026, 1, 18)
+
+def clip_forecast_dates(start_date: str, end_date: str):
+    start = pd.to_datetime(start_date).date()
+    end = pd.to_datetime(end_date).date()
+
+    # Clip
+    start_clipped = max(start, FORECAST_MIN_DATE)
+    end_clipped   = min(end, FORECAST_MAX_DATE)
+
+    # Return ISO format
+    return start_clipped.isoformat(), end_clipped.isoformat()
+
+
+#def get_full_weather_data(start_date, end_date, longitude, latitude):
+ #   forecast_weather_data = get_weather_data(start_date, end_date, longitude, latitude, True)
+  #  actual_weather_data = get_weather_data(start_date, end_date, longitude, latitude, False)
+   # forecast_weather_data['date'] = pd.to_datetime(forecast_weather_data['date'], utc=True)
+    #actual_weather_data['date'] = pd.to_datetime(actual_weather_data['date'], utc=True)
+    #merged_data = pd.merge(actual_weather_data, forecast_weather_data, on='date', how='left')
+    #return merged_data
 
 def merge_bike_weather(bike_data, weather_data):
     bike_data = bike_data.copy()
