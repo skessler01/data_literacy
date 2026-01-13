@@ -118,3 +118,47 @@ def split_long_gaps(df, long_gaps, counter_col='counter_site'):
         processed.append(seg)
 
     return pd.concat(processed).sort_index()
+
+
+def cap_counter_by_time_pattern(counter_data, values_where="count", cap_const=5):
+    """
+    Cap outliers in counter data based on hour-of-day and day-of-year patterns.
+    (quantiles and IQR calculated for each hour and day_of_year combination)
+
+    """
+    counter_data = counter_data.copy()
+    
+    # Extract time features
+    counter_data['hour'] = counter_data['timestamp'].dt.hour
+    counter_data['day_of_year'] = counter_data['timestamp'].dt.dayofyear
+
+    # Convert to float to avoid dtype mismatch
+    counter_data[values_where] = counter_data[values_where].astype(float)
+    
+    # Initialize capped column
+    counter_data[f'{values_where}_capped'] = False
+    
+    # Group by hour and day_of_year and calculate IQR for each group
+    for (hour, day_of_year), group_indices in counter_data.groupby(['hour', 'day_of_year']).groups.items():
+        group_data = counter_data.loc[group_indices, values_where]
+        
+        if len(group_data) > 3:  # Need at least 4 points for meaningful quartiles
+            Q1 = group_data.quantile(0.25)
+            if Q1 == 0: # skip capping if Q1 is 0
+                continue
+            Q3 = group_data.quantile(0.75)
+            IQR = Q3 - Q1
+            upper_bound = Q3 + cap_const * IQR
+            
+            # Mark and cap outliers
+            outlier_mask = group_data > upper_bound
+            counter_data.loc[group_indices[outlier_mask], f'{values_where}_capped'] = True
+            counter_data.loc[group_indices[outlier_mask], values_where] = upper_bound
+    
+    counter_data.drop(['hour', 'day_of_year'], axis=1, inplace=True)
+    return counter_data
+
+def cap_outliers_by_time_pattern(data, values_where="count", cap_const=5):
+    return data.groupby('counter_site', group_keys=False).apply(
+        cap_counter_by_time_pattern, values_where=values_where, cap_const=cap_const
+    )
