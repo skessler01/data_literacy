@@ -198,20 +198,20 @@ def process_city_mstl(df, city_name, output_csv="../data/mstl_results.csv"):
     df_city = df[df["city"] == city_name].copy()
     df_city["timestamp"] = pd.to_datetime(df_city["timestamp"], utc=True)
 
-    counters = df_city["counter_site_id"].unique()
+    counters = df_city["counter_site"].unique()
 
     first_write = True
 
     for counter in counters:
-        df_counter = df_city[df_city["counter_site_id"] == counter].copy()
+        df_counter = df_city[df_city["counter_site"] == counter].copy()
         df_counter = df_counter.set_index("timestamp").sort_index()
         df_counter["log_count"] = np.log1p(df_counter["count"])
-        res = MSTL(df_counter["log_count"], periods=[24, 168]).fit()
+        res = MSTL(df_counter["log_count"], periods=[24, 168]).fit()#, 8766]).fit()
         df_counter["trend"] = res.trend
         df_counter["seasonal_24"] = res.seasonal["seasonal_24"]
         df_counter["seasonal_168"] = res.seasonal["seasonal_168"]
+        #df_counter["seasonal_8766"] = res.seasonal["seasonal_8766"]
         df_counter["residual"] = res.resid
-        df_counter["count_deseason_detrend"] = np.expm1(res.resid)
         df_counter.to_csv(output_csv, mode='a', header=first_write, index_label="timestamp")
         first_write = False
         print(f"Processed counter {counter} in city '{city_name}'")
