@@ -63,17 +63,17 @@ def compute_temp_histograms(
         temp_max=35,
         n_bins=30,
 ):
-    all_actual = np.vstack([v["X"] for v in city_models["actual"].values()])[:, temp_col]
-    all_pred = np.vstack([v["X"] for v in city_models["predicted"].values()])[:, temp_col]
+    all_observed = np.vstack([v["X"] for v in city_models["observed"].values()])[:, temp_col]
+    all_forecast = np.vstack([v["X"] for v in city_models["forecast"].values()])[:, temp_col]
 
     bins = np.linspace(temp_min, temp_max, n_bins)
-    counts_actual, _ = np.histogram(all_actual, bins=bins)
-    counts_pred, _ = np.histogram(all_pred, bins=bins)
+    counts_observed, _ = np.histogram(all_observed, bins=bins)
+    counts_forecast, _ = np.histogram(all_forecast, bins=bins)
 
     return {
         "bins": bins,
-        "frac_actual": counts_actual / counts_actual.sum(),
-        "frac_pred": counts_pred / counts_pred.sum(),
+        "frac_observed": counts_observed / counts_observed.sum(),
+        "frac_forecast": counts_forecast / counts_forecast.sum(),
     }
 
 
@@ -88,9 +88,9 @@ def save_temp_effect_results(
         rain_levels=(0, 1.0, 3.0),
 ):
     results = {
-        "actual": compute_temp_effect_curves(
+        "observed": compute_temp_effect_curves(
             city_models,
-            source="actual",
+            source="observed",
             temp_col=temp_col,
             rain_col=rain_col,
             snow_col=snow_col,
@@ -98,9 +98,9 @@ def save_temp_effect_results(
             temp_max=temp_max,
             rain_levels=rain_levels,
         ),
-        "predicted": compute_temp_effect_curves(
+        "forecast": compute_temp_effect_curves(
             city_models,
-            source="predicted",
+            source="forecast",
             temp_col=temp_col,
             rain_col=rain_col,
             snow_col=snow_col,
@@ -211,20 +211,20 @@ def compute_rain_histograms(
     rain_clip=None,
     n_bins=25,
 ):
-    all_actual = np.vstack([v["X"] for v in city_models["actual"].values()])[:, rain_col]
-    all_pred   = np.vstack([v["X"] for v in city_models["predicted"].values()])[:, rain_col]
+    all_observed = np.vstack([v["X"] for v in city_models["observed"].values()])[:, rain_col]
+    all_forecast   = np.vstack([v["X"] for v in city_models["forecast"].values()])[:, rain_col]
 
     if rain_clip is None:
-        rain_clip = max(all_actual.max(), all_pred.max())
+        rain_clip = max(all_observed.max(), all_forecast.max())
 
     bins = np.linspace(0, rain_clip, n_bins)
-    counts_actual, _ = np.histogram(all_actual, bins=bins)
-    counts_pred, _   = np.histogram(all_pred, bins=bins)
+    counts_observed, _ = np.histogram(all_observed, bins=bins)
+    counts_forecast, _   = np.histogram(all_forecast, bins=bins)
 
     return {
         "bins": bins,
-        "frac_actual": counts_actual / counts_actual.sum(),
-        "frac_pred":   counts_pred / counts_pred.sum(),
+        "frac_observed": counts_observed / counts_observed.sum(),
+        "frac_forecast":   counts_forecast / counts_forecast.sum(),
     }
 
 
@@ -240,18 +240,18 @@ def save_rain_effect_results(
     snow_col=4,
     n_bins=25,
 ):
-    actual = compute_rain_effect_curves(
+    observed = compute_rain_effect_curves(
         city_models,
-        source="actual",
+        source="observed",
         temps_fixed=temps_fixed,
         temp_col=temp_col,
         rain_col=rain_col,
         snow_col=snow_col,
     )
 
-    predicted = compute_rain_effect_curves(
+    forecast = compute_rain_effect_curves(
         city_models,
-        source="predicted",
+        source="forecast",
         temps_fixed=temps_fixed,
         temp_col=temp_col,
         rain_col=rain_col,
@@ -261,13 +261,13 @@ def save_rain_effect_results(
     hist = compute_rain_histograms(
         city_models,
         rain_col=rain_col,
-        rain_clip=actual["rain_clip"],
+        rain_clip=observed["rain_clip"],
         n_bins=n_bins,
     )
 
     results = {
-        "actual": actual,
-        "predicted": predicted,
+        "observed": observed,
+        "forecast": forecast,
         "hist": hist,
         "meta": {
             "temps_fixed": temps_fixed,
