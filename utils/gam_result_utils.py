@@ -87,6 +87,25 @@ def save_temp_effect_results(
         temp_max=35,
         rain_levels=(0, 1.0, 3.0),
 ):
+    # Expected structure of city_models:## city_models = {
+    #     "actual": {
+    #         "<city_name>": {
+    #             "gam": <trained GAM model>,
+    #             "X": np.ndarray of shape (n_samples, n_features),
+    #             "y": np.ndarray of shape (n_samples,)   # optional for plotting
+    #         },
+    #         ...
+    #     },
+    #     "predicted": {
+    #         "<city_name>": {
+    #             "gam": <trained GAM model>,
+    #             "X": np.ndarray of shape (n_samples, n_features),
+    #             "y": np.ndarray of shape (n_samples,)
+    # optional for plotting
+    #         },
+    #         ...
+    #     }
+    # }
     results = {
         "observed": compute_temp_effect_curves(
             city_models,
