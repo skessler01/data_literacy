@@ -3,6 +3,10 @@ import pandas as pd
 import requests_cache
 import time
 
+# helper methods for targeted downloading of weather data
+
+# downloads hourly weatherdata within the given time frame (start_data to end_date) for given coordinates
+# Allows downloading from historic-forecast if forecast=true or from a observed weather archive if forecast=False
 def get_weather_data(start_date, end_date, longitude, latitude, forecast):
 
     # Setup the Open-Meteo API client with cache and retry on error
@@ -53,7 +57,7 @@ def get_weather_data(start_date, end_date, longitude, latitude, forecast):
 
     return weather_data
 
-
+# Downloads both, forecast data and observed data and returns it as a single dataframe
 def get_full_weather_data(start_date, end_date, longitude, latitude):
     # --- 1. Actual weather: full range ---
     actual_weather_data = get_weather_data(
@@ -97,6 +101,7 @@ from datetime import date
 FORECAST_MIN_DATE = date(2016, 1, 1)
 FORECAST_MAX_DATE = date(2026, 1, 18)
 
+# helper method to ensure data validity for forecast data
 def clip_forecast_dates(start_date: str, end_date: str):
     start = pd.to_datetime(start_date).date()
     end = pd.to_datetime(end_date).date()
@@ -108,15 +113,7 @@ def clip_forecast_dates(start_date: str, end_date: str):
     # Return ISO format
     return start_clipped.isoformat(), end_clipped.isoformat()
 
-
-#def get_full_weather_data(start_date, end_date, longitude, latitude):
- #   forecast_weather_data = get_weather_data(start_date, end_date, longitude, latitude, True)
-  #  actual_weather_data = get_weather_data(start_date, end_date, longitude, latitude, False)
-   # forecast_weather_data['date'] = pd.to_datetime(forecast_weather_data['date'], utc=True)
-    #actual_weather_data['date'] = pd.to_datetime(actual_weather_data['date'], utc=True)
-    #merged_data = pd.merge(actual_weather_data, forecast_weather_data, on='date', how='left')
-    #return merged_data
-
+# helper method to merge bikedata with weatherdata in one line
 def merge_bike_weather(bike_data, weather_data):
     bike_data = bike_data.copy()
     weather_data = weather_data.copy()
@@ -126,10 +123,11 @@ def merge_bike_weather(bike_data, weather_data):
     fused_data = pd.merge(bike_data, weather_data, on=['city','timestamp'], how='inner')  # merge
     return fused_data
 
+
+# takes the coordinates from a dataset grouped by city and downloads the weather data
+# corresponding to the time frame of the data. Saves weather data and
+# @returns the corresponding weather data
 def download_corresponding_weather_data(data):
-    # takes the coordinates from a dataset grouped by city and downloads the weather data
-    # corresponding to the time frame of the data. Saves weather data and
-    # @returns the corresponding weather data
     city_coords = (
         data[["city", "city_lat", "city_lon"]]
         .drop_duplicates(subset="city")
@@ -161,7 +159,7 @@ def download_corresponding_weather_data(data):
         df_weather["city"] = city
         weather_frames.append(df_weather)
 
-        time.sleep(16)  # <-- important: sleep between requests
+        time.sleep(16)  # <-- sleep between requests to not exceed the request limit
 
     weather_data = pd.concat(weather_frames, ignore_index=True)
     weather_data.to_csv("../data/weather_data.csv", index=False)

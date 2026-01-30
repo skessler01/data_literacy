@@ -1,7 +1,11 @@
 import numpy as np
 import pickle
 
+# Utils for plotting gam results. This file contains methods to extract temperature and rain curve (based on predicting
+# from the model for fixed conditions (defined in model parameter))
+# In addtion to the curves, the histogram values are computed
 
+# Computes temperature curves. Expects weather to be normalized.
 def compute_temp_effect_curves(
         city_models,
         source,
@@ -79,7 +83,7 @@ def compute_temp_effect_curves(
         "curves": out,
     }
 
-
+# Computes the values displayable in a histogram for temperature distribution
 def compute_temp_histograms(
         city_models,
         temp_col=2,
@@ -108,7 +112,7 @@ def compute_temp_histograms(
         "frac_forecast": counts_forecast / counts_forecast.sum(),
     }
 
-
+# Takes a dict and computes curve and histogram data and saves it into a pkl file
 def save_temp_effect_results(
         city_models,
         out_path,
@@ -180,13 +184,11 @@ def save_temp_effect_results(
 
     print(f"Saved temperature effect results to {out_path}")
 
-
-import numpy as np
-
-
+# Conversion from log diff to percent
 def logdiff_to_percent(delta):
     return (np.exp(delta) - 1) * 100
 
+# Computes rain curves. Expects weather to be normalized.
 def compute_rain_effect_curves(
     city_models,
     source,
@@ -266,7 +268,7 @@ def compute_rain_effect_curves(
         "curves": summary,
     }
 
-
+# Computes the values displayable in a histogram for rain distribution
 def compute_rain_histograms(
     city_models,
     rain_col=3,
@@ -300,6 +302,7 @@ def compute_rain_histograms(
         "frac_forecast":   counts_forecast / counts_forecast.sum(),
     }
 
+# Takes a dict and computes curve and histogram data and saves it into a pkl file
 def save_rain_effect_results(
     city_models,
     out_path,

@@ -1,4 +1,5 @@
 import pandas as pd
+# simple filter function for timeframe and place for easy access for plotting
 def filter_location_and_time(data, locations, start_date, end_date):
     # locations can be a list of strings with the names of the places
     # start_date and end_date may be string or timestamp object (as long as the string has

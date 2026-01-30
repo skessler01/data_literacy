@@ -6,7 +6,8 @@ from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
 import numpy as np
 from statsmodels.tsa.stl._stl import STL
 
-
+# Applies MSTL on one city in the data on the specified column. Optional parameters allow to use boxcox,
+# specify the lambda for boxcox (0 == log transformation) and the periods MSTL should extract
 def performMSTL(data, city, on_column="median_count", use_boxcox=False, lambda_bc=None, periods=None):
     df = data.copy()
     df_city = df[df["city"] == city].copy()
@@ -29,7 +30,7 @@ def performMSTL(data, city, on_column="median_count", use_boxcox=False, lambda_b
     res = MSTL(ts, periods=periods).fit()
     return res
 
-
+# Plots the MSTL results as overview, given the res object of the trained MSTL model
 def plotMSTLResults(res, city):
     # --- Seasonality plots ---
     fig, axes = plt.subplots(1, 3, figsize=(18, 4))
@@ -99,7 +100,7 @@ def plotMSTLResults(res, city):
     plt.tight_layout()
     plt.show()
 
-
+# Uses Stl on a specified column and a specified period
 def stl_decompose(df_counter, column, period):
     """
     Performs STL decomposition on a specified column and adds seasonal and trend columns.
@@ -119,7 +120,7 @@ def stl_decompose(df_counter, column, period):
     df_counter[f"residual_{period}"] = res.resid
     return df_counter
 
-
+# Applies iterative stl on all counter of a city. The seasonalities are 24h, 168h and 8766h
 def process_city_stl(df, city_name, output_csv="../data/stl_results.csv"):
     """
     Processes all counters in a city with daily + weekly STL applied to a specified column.
@@ -193,7 +194,7 @@ def process_city_stl(df, city_name, output_csv="../data/stl_results.csv"):
         first_write = False
         print(f"Processed counter {counter} in city '{city_name}'")
 
-
+# Applies MSTL on all counter of a cities with the seasonalities 24h, 168h, 8766h
 def process_city_mstl(df, city_name, output_csv="../data/mstl_results.csv"):
     df_city = df[df["city"] == city_name].copy()
     df_city["timestamp"] = pd.to_datetime(df_city["timestamp"], utc=True)
@@ -206,11 +207,11 @@ def process_city_mstl(df, city_name, output_csv="../data/mstl_results.csv"):
         df_counter = df_city[df_city["counter_site"] == counter].copy()
         df_counter = df_counter.set_index("timestamp").sort_index()
         df_counter["log_count"] = np.log1p(df_counter["count"])
-        res = MSTL(df_counter["log_count"], periods=[24, 168]).fit()#, 8766]).fit()
+        res = MSTL(df_counter["log_count"], periods=[24, 168, 8766]).fit()#, 8766]).fit()
         df_counter["trend"] = res.trend
         df_counter["seasonal_24"] = res.seasonal["seasonal_24"]
         df_counter["seasonal_168"] = res.seasonal["seasonal_168"]
-        #df_counter["seasonal_8766"] = res.seasonal["seasonal_8766"]
+        df_counter["seasonal_8766"] = res.seasonal["seasonal_8766"]
         df_counter["residual"] = res.resid
         df_counter.to_csv(output_csv, mode='a', header=first_write, index_label="timestamp")
         first_write = False
