@@ -2,20 +2,9 @@
 Group Project Data Literacy (Johanna, Martin, Natalie, Silja)
 
 ## Abstract
-It is no surprise that cycling behavior is influenced
-by weather—but what is the more driving factor:
-current observations or forecasts? We compare
-the ability of different models incorporating ob-
-served and forecasted weather to predict bicycle
-counts from seven cities in Baden-Württemberg.
-Our results indicate that cyclists integrate both
-current and anticipated weather conditions into
-their decision-making, with a combined model
-providing the most accurate predictions; specifi-
-cally, both factors predict a decline in cycling ac-
-tivity for lower temperatures and rainfall. These
-findings provide insight into psychological con-
-siderations underlying cycling decisions.
+It is no surprise that cycling behavior is influenced by weather—but what is the more driving factor:
+current observations or forecasts? We compare the ability of different models incorporating observed and forecasted weather to predict bicycle
+counts from seven cities in Baden-Württemberg. Our results indicate that cyclists integrate both current and anticipated weather conditions into their decision-making, with a combined model providing the most accurate predictions; specifically, both factors predict a decline in cycling activity for lower temperatures and rainfall. These findings provide insight into psychological considerations underlying cycling decisions.
 ---
 
 ## Repository Structure
