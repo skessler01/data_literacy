@@ -1,5 +1,5 @@
 # Project Title
-Group Project Data Literacy (Johanna, Martin, Natalie, Silja)
+Project by Martin Gruber, Silja Keßler, Natalie Kraus und Johanna Mauch conducted as part of the course "Data Literacy" (WiSe 2025/26) by Prof. Philipp Hennig.
 
 ## Abstract
 It is no surprise that cycling behavior is influenced by weather—but what is the more driving factor:
