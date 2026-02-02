@@ -14,6 +14,10 @@ dependencies:
   - openpyxl
   - seaborn
   - plotly # for interactive plots
+  - statsmodels
+  - patsy.highlevel
+  - datetime
+  - pickle
   - pip:
     - openmeteo-requests
     - requests-cache
