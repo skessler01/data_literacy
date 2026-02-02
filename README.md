@@ -31,11 +31,8 @@ The download of these files happens in notebooks/preprocessing_and_mstl.ipynb
 ---
 
 ## Exploration
-Exploratory analyses conducted to understand the data and inform evaluation.
-This folder contains notebooks exploring the data, techniques or features at 
-all stages of the project as well as util functions used by them.
-Some of these notebooks can no longer be executed due to changes in the 
-dataset but still provide insights in the process leading to conceptual 
+This folder contains notebooks that **not part of our submitted project**. However, they contain exploratory analyses conducted to understand the data and inform evaluation.
+Note that some of these notebooks can no longer be executed as they use an outdated dataset but still provide insights in the process leading to conceptual 
 decisions for the main analysis. 
 - cycling_promotion.ipynb, data_preprocessing.ipynb and locations.ipynb explored 
 the default bike dataset and preprocessing steps
@@ -68,7 +65,9 @@ not shown in the paper
 ## Figures
 Figures used in the paper.
 
-- Description of generated plots and tables
+- Figure 1 (heatmap): Hourly bike traffic recorded by a single counter at Unterführung Steinlach in Tübingen
+- Figure 2 (forest plot): Pairwise comparison of model predictive performance
+- Figure 3 (line plot + histogram): Change in bike counts depending on temperature relative to the mean temperature
 
 ---
 
