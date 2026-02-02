@@ -20,6 +20,11 @@ dependencies:
   - patsy.highlevel
   - datetime
   - pickle
+  - sklearn
+  - sys
+  - pygam
+  - copy 
+  - json
   - pip:
     - openmeteo-requests
     - requests-cache
