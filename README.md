@@ -7,7 +7,7 @@ by weather—but what is the more driving factor:
 current observations or forecasts? We compare
 the ability of different models incorporating ob-
 served and forecasted weather to predict bicycle
-counts from seven cities in Baden-W ¨urttemberg.
+counts from seven cities in Baden-Württemberg.
 Our results indicate that cyclists integrate both
 current and anticipated weather conditions into
 their decision-making, with a combined model
