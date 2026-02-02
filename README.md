@@ -31,17 +31,13 @@ The download of these files happens in notebooks/preprocessing_and_mstl.ipynb
 ---
 
 ## Exploration
-This folder contains notebooks that **not part of our submitted project**. However, they contain exploratory analyses conducted to understand the data and inform evaluation.
+This folder contains notebooks that **not part of our submitted project**. However, they contain exploratory analyses conducted to understand the data and inform analysis and evaluation.
 Note that some of these notebooks can no longer be executed as they use an outdated dataset but still provide insights in the process leading to conceptual 
 decisions for the main analysis. 
-- cycling_promotion.ipynb, data_preprocessing.ipynb and locations.ipynb explored 
-the default bike dataset and preprocessing steps
-- decomposition_mstl.ipynb, iterative_decomposition.ipynb 
-explore data decomposition techniques
-- exploration.ipynb, exploration_visualizations.ipynb and weather_data_exploration.ipynb explore the unchanged dataset 
-without and with weather combined
-- weather_effect_exploration_GLMs.ipynb and gams.ipynb explore GLMs and GAMs 
-for extracting weather effects
+- cycling_promotion.ipynb, data_preprocessing.ipynb and locations.ipynb explore the initial (now outdated) bike dataset and potential problems
+- decomposition_mstl.ipynb, iterative_decomposition.ipynb explore data decomposition techniques
+- exploration.ipynb, exploration_visualizations.ipynb and weather_data_exploration.ipynb explore the raw dataset without and with weather combined
+- weather_effect_exploration_GLMs.ipynb and gams.ipynb explore GLMs and GAMs for extracting weather effects
 - outliers.ipynb explores techniques for filtering out outliers in a complex time series
 
 ---
