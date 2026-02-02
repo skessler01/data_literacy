@@ -65,9 +65,9 @@ not shown in the paper
 ## Figures
 Figures used in the paper.
 
-- Figure 1 (heatmap): Hourly bike traffic recorded by a single counter at Unterführung Steinlach in Tübingen
-- Figure 2 (forest plot): Pairwise comparison of model predictive performance
-- Figure 3 (line plot + histogram): Change in bike counts depending on temperature relative to the mean temperature
+- bike_traffic_tuebingen.pdf: Figure 1 (heatmap) showing the hourly bike traffic recorded by a single counter at Unterführung Steinlach in Tübingen 
+- forest_plot_mae_differences.pdf: Figure 2 (forest plot) showing the pairwise comparison of model predictive performance
+- pred_vs_obs_wheather.pdf: Figure 3 (line plot + histogram) showing change in bike counts depending on temperature relative to the mean temperature
 
 ---
 
@@ -88,9 +88,9 @@ partial dependence curves of the gams for weather and rain
 Instructions for reproducing the results.
 
 Execution Order: To perform the analysis, the notebooks need to be executed in the following order:
-1. preprocessing_and_mstl.ipynb
-2. gams_pipeline.ipynb
-3. evaluation.ipynb
-4. paper_plots.ipynb/other_plots.ipynb
+1. preprocessing_and_mstl.ipynb to load and preprocess data and perform seasonal decomposition using MSTL
+2. gams_pipeline.ipynb to train Generalize additive models (GAMs)
+3. evaluation.ipynb to evaluate GAMs
+4. paper_plots.ipynb/other_plots.ipynb to reproduce plots (used in the paper)
 
 
