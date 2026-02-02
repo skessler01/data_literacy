@@ -64,6 +64,7 @@ Figures used in the paper.
 - bike_traffic_tuebingen.pdf: Figure 1 (heatmap) showing the hourly bike traffic recorded by a single counter at Unterführung Steinlach in Tübingen 
 - forest_plot_mae_differences.pdf: Figure 2 (forest plot) showing the pairwise comparison of model predictive performance
 - pred_vs_obs_wheather.pdf: Figure 3 (line plot + histogram) showing change in bike counts depending on temperature relative to the mean temperature
+- *polar_bike_traffic_tuebingen.png/.pdf: polar plots showing average daily bike traffic (not used in the paper)
 
 ---
 
