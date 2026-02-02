@@ -11,9 +11,15 @@ dependencies:
   - jupyter
   - scipy
   - requests
+  - pickle
   - openpyxl
   - seaborn
+  - tueplots
   - plotly # for interactive plots
+  - statsmodels
+  - patsy.highlevel
+  - datetime
+  - pickle
   - pip:
     - openmeteo-requests
     - requests-cache
