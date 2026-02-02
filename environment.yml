@@ -11,8 +11,10 @@ dependencies:
   - jupyter
   - scipy
   - requests
+  - pickle
   - openpyxl
   - seaborn
+  - tueplots
   - plotly # for interactive plots
   - pip:
     - openmeteo-requests
