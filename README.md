@@ -83,7 +83,7 @@ partial dependence curves of the gams for weather and rain
 ## Reproducibility
 Instructions for reproducing the results.
 
-Execution Order: To perform the analysis, the notebooks need to be executed in the following order:
+To perform the analysis, the notebooks need to be executed in the following order:
 1. preprocessing_and_mstl.ipynb to load and preprocess data and perform seasonal decomposition using MSTL
 2. gams_pipeline.ipynb to train Generalize additive models (GAMs)
 3. evaluation.ipynb to evaluate GAMs
