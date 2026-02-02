@@ -1,4 +1,4 @@
-# Checking the Sky or the Screen: Disentangling Observed and Forecasted Weather Effects on Cycling Activity}
+# Checking the Sky or the Screen: Disentangling Observed and Forecasted Weather Effects on Cycling Activity
 Project by Martin Gruber, Silja Keßler, Natalie Kraus und Johanna Mauch conducted as part of the course "Data Literacy" (WiSe 2025/26) by Prof. Philipp Hennig.
 
 ## Abstract
